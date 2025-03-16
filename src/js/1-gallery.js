@@ -70,8 +70,8 @@ const images = [
   },
 ];
 
-const gallery = document.querySelector(".gallery");
-gallery.insertAdjacentHTML("beforeend", createGalleryMarkup(images));
+const gallery = document.querySelector('.gallery');
+gallery.insertAdjacentHTML('beforeend', createGalleryMarkup(images));
 
 function createGalleryMarkup(galleryCards) {
   return galleryCards
@@ -91,7 +91,7 @@ function createGalleryMarkup(galleryCards) {
 }
 
 const altOption = {
-    captionsData: `alt`,
-    captionDelay: 250,
-}
+  captionsData: `alt`,
+  captionDelay: 250,
+};
 new SimpleLightbox('.gallery a', altOption);
