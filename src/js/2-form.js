@@ -20,9 +20,9 @@ function onFormSubmit(event) {
   } else {
     console.log(formData);
 
+    
     localStorage.removeItem(STORAGE_KEY);
-
-    new FormData(form);
+    formData = { email: '', message: '' };
     form.reset();
   }
 }
